@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "skIF Telemetry Event",
+  "type": "object",
+  "required": ["event_type", "agent_id", "skill"],
+  "properties": {
+    "event_type": {"type": "string", "minLength": 1, "maxLength": 100},
+    "agent_id": {"type": "string", "minLength": 1, "maxLength": 200},
+    "skill": {"type": "string", "minLength": 1, "maxLength": 300},
+    "run_id": {"type": "string", "maxLength": 200},
+    "payload": {"type": "object", "additionalProperties": true}
+  }
+}

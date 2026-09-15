@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "skIF Community Vote",
+  "type": "object",
+  "required": ["agent_id", "skill", "run_id", "candidate", "choice"],
+  "properties": {
+    "agent_id": {"type": "string", "minLength": 1},
+    "skill": {"type": "string", "minLength": 1},
+    "run_id": {"type": "string", "minLength": 1},
+    "candidate": {"type": ["string", "integer"]},
+    "choice": {"type": ["string", "boolean", "integer"]},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1}
+  }
+}

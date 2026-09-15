@@ -1,0 +1,26 @@
+/__pycache__
+*.pyc
+.pytest_cache
+data/*.db
+data/runs/
+
+data/*.db-shm
+data/*.db-wal
+
+# runtime state
+data/identity.json
+data/benchmarks.jsonl
+data/marketplace/
+data/federation/
+data/eval_corpus/
+data/production/
+data/migrations/
+
+# 3.1 Neo runtime
+data/knowledge_mesh.db
+data/global_benchmarks.jsonl
+data/predictions.jsonl
+data/research/
+data/knowledge_mesh.db-shm
+data/knowledge_mesh.db-wal
+go/**/skif-gateway

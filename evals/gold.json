@@ -1,0 +1,8 @@
+{
+  "cases": [
+    {"id":"gold-pass-1","prompt":"Return the exact word PASS.","success_criteria":["output exactly PASS"],"expected_pass":true},
+    {"id":"gold-fail-1","prompt":"Return the exact word FAIL, but the criterion requires PASS.","success_criteria":["output exactly PASS"],"expected_pass":false},
+    {"id":"gold-pass-2","prompt":"Compute 2+2 and answer 4.","success_criteria":["answer is 4"],"expected_pass":true},
+    {"id":"gold-fail-2","prompt":"Answer 2+2 with 5.","success_criteria":["answer is 4"],"expected_pass":false}
+  ]
+}

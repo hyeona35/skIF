@@ -1,0 +1,17 @@
+[build-system]
+requires = []
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skif"
+version = "3.1.0"
+description = "Agent Skill Operating System with federation, portable identity, autonomous research and privacy-preserving telemetry"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+
+[project.scripts]
+skif = "sev.cli:main"
+
+[tool.setuptools]
+packages = ["sev"]

@@ -1,0 +1,7 @@
+{
+  "name": "@skif/sdk",
+  "version": "3.1.0",
+  "description": "Agent-first skIF SDK for telemetry, contributions, identity, evaluation, marketplace, federation, and security",
+  "type": "module",
+  "exports": "./index.js"
+}
